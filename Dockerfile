@@ -1,4 +1,4 @@
 FROM tomsquest/docker-radicale
 
-COPY radicale_ldap_auth /opt/radicale_ldap_auth
-RUN  cd /opt/radicale_ldap_auth && python3 -m pip install .
+COPY radicale_auth_ldap /opt/radicale_auth_ldap
+RUN  cd /opt/radicale_auth_ldap && python3 -m pip install .
